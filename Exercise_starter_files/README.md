@@ -16,7 +16,7 @@ Create and publish a pipeline
 Documentation
 
 ## Architectural Diagram
-![architectur_diagram] (https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/architectur-diagram.png)
+![architectur_diagram] (https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/Exercise_starter_files/screenshots/architectur-diagram.png?raw=true) 
 
 ## Key Steps
 **Step 1: Authentication**
