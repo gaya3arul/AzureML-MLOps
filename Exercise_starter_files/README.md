@@ -63,7 +63,7 @@ Retrieving Application Insights Logs:
 The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 8000 to serve the Swagger JSON file.
 
 Swagger running on localhost showing the HTTP API methods and responses for the model:
-![swagger_ui](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger_ui.png)
+![swagger_ui](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-ui.png)
 
 
 **Step 6: Consuming Model Endpoint**
