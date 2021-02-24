@@ -90,7 +90,7 @@ The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
 ![automl-module-finished](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-module-finished.png)
 
 A completed pipeline run:
-![pipeline_runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline_runs.png)
+![pipeline-runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline-runs.png)
 
 Benchmarking :(optional step)
 Ran shell script benchmark.sh. It takes around 144 ms per request and there are no failed requests.
