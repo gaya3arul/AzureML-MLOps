@@ -21,29 +21,22 @@ Documentation
 ## Key Steps
 **Step 1: Authentication**
 
-Using the Azure Cloud Shell and the Azure Machine Learning CLI Extension, a Service Principal Account has been created and granted the owner role to the Azure Machine Learning workspace. The necessary commands are documented in the service_principal_setup_instructions.txt file.
-
-Creation of Service Principal ml-auth:
-![service_principal_creation](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/service_principal_creation.png)
-
-Service Principal ml-auth has been granted access to the workspace:
-![service_principal_access](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/service_principal_access.png)
+I have skipped this step as I am notauthorized to create a security principal.
 
 
 **Step 2: Automated ML Experiment**
 
-The dataset has been downloaded from https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv and registered as a dataset in the Azure Machine Learning workspace with the appropriate configurations. 
+The dataset has been downloaded from https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv and registered as a dataset in the Azure Machine Learning workspace with all the instructions given in the project section.
 
 Registered dataset:
-![registered_dataset](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/registered_dataset.png)
-
-An AutoMl experiment has been started using the registered dataset. Classification has been selected and the "Explain best model" option has been checked. The "Exit criterion" has been reduced to 1 hour and the "Concurrency" has been set to 5.
+![registered_dataset](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Registered_dataset.png)
+I created an AutoML run with the registered Bank marketing dataset. Classification has been selected and the "Explain best model" option has been checked. The "Exit criterion" has been reduced to 1 hour and the "Concurrency" has been set to 5.
 
 Completed experiment:
-![automl_run](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/automl_run.png)
+![automl_run](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-run.png)
 
 Best model:
-![best_model](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/best_model.png)
+![best_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model.png)
 
 
 **Step 3: Model Deployment**
