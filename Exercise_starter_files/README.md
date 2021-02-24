@@ -52,7 +52,7 @@ Model is deployed and it is in healthy state:
 Application Insights has been enabled for the deployed model using the Python SDK and logs have been retrieved by running the logs.py script.
 
 Enabling Application Insights:
-![application_insights_enabled](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application_insights_enabled.png)
+![application_insights_enabled](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application-insights-enabled.png)
 
 Retrieving Application Insights Logs:
 ![application_insights_logs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application_insights_logs.png)
@@ -71,38 +71,39 @@ Swagger running on localhost showing the HTTP API methods and responses for the 
 The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
 
 Running the endpoint.py script against the API producing JSON output from the model:
-![consume_endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consume_endpoint.png)
+![consuming-model-endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consuming-model-endpoint.png)
 
 
 **Step 7: Creating and Publishing a Pipeline**
 
-The pipeline_with_automl_step.ipynb notebook has been adjusted and run to create, publish and consume a pipeline.
+The aml-exercise-pipelines-with-automated-machine-learning-step.ipynb notebook has been modified and run to create, publish and consume a pipeline.
 
 AML studio pipeline section showing the pipeline REST endpoint with a status of ACTIVE:
-![pipeline_endpoints](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/pipeline_endpoints.png)
+![pipeline_endpoints](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline-endpoint.png)
 
 The bankmarketing dataset with the AutoML module:
-![pipeline_run](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/pipeline_run.png)
+![pipeline_run](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline-run.png)
 
 The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
-![run_details_widget](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/run_details_widget.png)
+![RunWidgets](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/RunWidgets.png)
+
+![automl-module-finished](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-module-finished.png)
 
 A completed pipeline run:
-![pipeline_runs](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/pipeline_runs.png)
+![pipeline_runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline_runs.png)
 
+Benchmarking :(optional step)
+Ran shell script benchmark.sh. It takes around 144 ms per request and there are no failed requests.
 
+![Benchmarking](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/benchmark.png)
 **Step 8: Documentation**
 
 A screencast showing the entire process of the working ML application has been created. The link can be found in the next section. In addition, this README has been created which contains an overview of the project, an architectural diagram, a short description of the project main steps as well as a short section on how to improve the project in the future.
 
 ## Screen Recording
-The screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://www.youtube.com/watch?v=hBo26CPtdIE.
+The screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://youtu.be/VWn0fYbOMiE.
 
 ## Improvement Suggestions
 - Dataset: The registered dataset can directly point to the URI instead of making use of a local file upload so that when the data gets updated, automatically the new data will be used within the pipeline run.
-- Automation: In general, some steps have been completed manually using the AML studio (GUI) such as model deployment of the best model. This can be automated in code and executed by a DevOps pipeline in the future.
-- Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.
-- Model endpoint: The model endpoint could be benchmarked with the Apache Benchmark command-line tool to ensure the right compute setup.
-- Swagger Documentation: The swagger UI could be hosted on a web server instead of on localhost so that other people have access to the model documentation.
-- Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner (e.g. when dataset is updated).
-
+- Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.Exporting the model using ONNX. 
+-  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .Using Parallel run in a pipeline when large dataset is used as input. 
