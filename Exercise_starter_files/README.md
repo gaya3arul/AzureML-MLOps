@@ -43,24 +43,27 @@ Best model:
 
 The best model has been selected for deployment using Azure Container Instance (ACI). Authentication has been enabled. This has been completed using the Azure Machine Learning studio (the GUI).
 
+Model is deployed and it is in healthy state:
+
+![deploy_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/deploy-model.png)
 
 **Step 4: Enabling Logging**
 
 Application Insights has been enabled for the deployed model using the Python SDK and logs have been retrieved by running the logs.py script.
 
 Enabling Application Insights:
-![application_insights_enabled](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/application_insights_enabled.png)
+![application_insights_enabled](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application_insights_enabled.png)
 
 Retrieving Application Insights Logs:
-![application_insights_logs](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/application_insights_logs.png)
+![application_insights_logs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application_insights_logs.png)
 
 
 **Step 5: Swagger Documentation**
 
-The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 9000 to serve the Swagger JSON file.
+The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 8000 to serve the Swagger JSON file.
 
 Swagger running on localhost showing the HTTP API methods and responses for the model:
-![swagger_ui](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/swagger_ui.png)
+![swagger_ui](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger_ui.png)
 
 
 **Step 6: Consuming Model Endpoint**
@@ -68,7 +71,7 @@ Swagger running on localhost showing the HTTP API methods and responses for the 
 The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
 
 Running the endpoint.py script against the API producing JSON output from the model:
-![consume_endpoint](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/consume_endpoint.png)
+![consume_endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consume_endpoint.png)
 
 
 **Step 7: Creating and Publishing a Pipeline**
