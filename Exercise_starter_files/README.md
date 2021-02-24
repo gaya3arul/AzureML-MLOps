@@ -101,7 +101,7 @@ Ran shell script benchmark.sh. It takes around 144 ms per request and there are 
 A screencast showing the entire process of the working ML application has been created. The link can be found in the next section. In addition, this README has been created which contains an overview of the project, an architectural diagram, a short description of the project main steps as well as a short section on how to improve the project in the future.
 
 ## Screen Recording
-The screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://youtu.be/VWn0fYbOMiE.
+The screencast containing the project results has been recorded using the Camtasia and has been uploaded to YouTube: https://youtu.be/VWn0fYbOMiE.
 
 ## Improvement Suggestions
 - Dataset: The registered dataset can directly point to the URI instead of making use of a local file upload so that when the data gets updated, automatically the new data will be used within the pipeline run.
