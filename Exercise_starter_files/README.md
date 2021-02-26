@@ -7,8 +7,7 @@
    * [Screenshots](#Screenshots)
    * [Screen Recording](#Screen-Recording)
    * [Comments and future improvements](#Comments-and-future-improvements)
-   * [Dataset Citation](#Dataset-Citation)
-   * [References](#References)
+)
 
 
 ## Overview
@@ -23,6 +22,8 @@ results from an AutoML training run.
    
 
 ## Architectural Diagram
+
+
 ![architectur_diagram](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/architectur-diagram.png) 
 
 ## Key Steps
