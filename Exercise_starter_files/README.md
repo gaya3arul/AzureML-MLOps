@@ -126,8 +126,14 @@ Ran shell script benchmark.sh. It takes around 94.86 ms per request and there ar
 
 ![Benchmarking](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/benchmark.png)
 **Step 8: Documentation**
+Architectural diagram , Screenshots, and Screencast have been used for documentation.
 
-A screencast showing the entire process of the working ML application has been created. The link can be found in the next section. In addition, this README has been created which contains an overview of the project, an architectural diagram, a short description of the project main steps as well as a short section on how to improve the project in the future.
+The screencast covers the following. 
+
+The working deployed ML model endpoint
+The deployed Pipeline
+Available AutoML Model
+Successful API requests to the endpoint with a JSON payload
 
 ## Screen Recording
 The screencast containing the project results has been recorded using the Camtasia and has been uploaded to YouTube: https://youtu.be/eb4cwFwbt_s.
