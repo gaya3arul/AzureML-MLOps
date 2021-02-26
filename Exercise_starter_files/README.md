@@ -88,16 +88,14 @@ Retrieving Application Insights Logs:This screenshot has logs that are retrieved
 
 Swagger is a set of open-source tools built around the OpenAPI Specification that can help us design, build, document and consume REST APIs. One of the major tools of Swagger is Swagger UI, which is used to generate interactive API documentation that lets the users try out the API calls directly in the browser.
 
-The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 8000 to serve the Swagger JSON file.
+The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080
 
-
-Swagger running on localhost showing the HTTP API methods and responses for the model:
 ![swagger-bash](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-bash.png)
 
 ![swagger-bash1](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-bash1.png)
 
 
-Swagger UI now has the name of the deployed model after running the serve.py file:
+Finally, the serve.py script has been run to start a Python server on port 8000 to serve the Swagger JSON file.Swagger running on localhost showing the HTTP API methods and responses for the model.Swagger UI now has the name of the deployed model after running the serve.py file:
 ![swagger_ui](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-ui.png)
 
 We can post and get data from the webserver using Swagger. The following acreenshots shows various methods used and various responses we get from the server:
