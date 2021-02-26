@@ -143,10 +143,10 @@ Architectural diagram , Screenshots, and Screencast have been used for documenta
 
 The screencast covers the following. 
 
-The working deployed ML model endpoint
-The deployed Pipeline
-Available AutoML Model
-Successful API requests to the endpoint with a JSON payload
+- The working deployed ML model endpoint
+- The deployed Pipeline
+- Available AutoML Model
+- Successful API requests to the endpoint with a JSON payload
 
 ## Screen Recording
 The screencast containing the project results has been recorded using the Camtasia and has been uploaded to YouTube: https://youtu.be/eb4cwFwbt_s.
