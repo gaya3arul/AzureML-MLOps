@@ -86,6 +86,8 @@ Retrieving Application Insights Logs:This screenshot has logs that are retrieved
 
 **Step 5: Swagger Documentation**
 
+Swagger is a set of open-source tools built around the OpenAPI Specification that can help us design, build, document and consume REST APIs. One of the major tools of Swagger is Swagger UI, which is used to generate interactive API documentation that lets the users try out the API calls directly in the browser.
+
 The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 8000 to serve the Swagger JSON file.
 
 
@@ -106,7 +108,7 @@ We can post and get data from the webserver using Swagger. The following acreens
 
 **Step 6: Consuming Model Endpoint**
 
-The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
+Once the best model is deployed, I consume its endpoint using the endpoint.py script provided where I replace the values of scoring_uri and key to match the corresponding values that appear in the Consume tab of the endpoint:
 
 Updated the endpoint.py to having correct scoring uri and key:
 ![updating-scoring-uri-key](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-scoring-uri-key.png)
@@ -143,8 +145,10 @@ ML studio showing the scheduled run:
 
 Benchmarking :(optional step)
 
-
+A benchmark is used to create a baseline or acceptable performance measure. Benchmarking HTTP APIs is used to find the average response time for a deployed model.
 Updating benchmark with correct scoring uri and key:
+
+Apache Benchmark is an easy and popular tool for benchmarking HTTP services. After updating the benchmark.sh file with scoring uri and key, the script is executed using bash command.
 
 ![updating-benchmark](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-benchmark.png)
 
@@ -164,7 +168,13 @@ The screencast covers the following.
 ## Screen Recording
 The screencast containing the project results has been recorded using the Camtasia and has been uploaded to YouTube: https://youtu.be/eb4cwFwbt_s.
 
+
 ## Improvement Suggestions
-- Dataset:The dataset is imbalanced dataset. There are two classes a) people who subscribe to term deposit and b)people who will not. There is one class with less data. We can balance the dataset by generating synthetic data points for the class which has less data points.
+- Dataset:The dataset is imbalanced dataset. This is a classification problem and there are two classes in the target column. (yes or no) i.e people who subscribe to term deposit and people who will not. We will need to tackle the issue outlined below by introducing techniques for handling imbalanced data. This will reduce the bias towards one class and, therefore, produce a more reliable model capable of recognising both classes. Alternatively, we can use a metric that is more suitable for working with imbalanced data, for example, AUC and F1 score, to get more reliable predictions. We can also use weighted score for imbalanced data.
+     Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
 - Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.We didnt use Deep Learning models. Using DL models can give better results.
--  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .In future, we can try parallel run in a pipeline when large dataset is used as input. It will be very useful to learn and apply that knowledge. 
+-  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .In future, we can try parallel run in a pipeline when large dataset is used as input. It will be very useful to learn and apply that knowledge. Due to lack of time , I could not try this option. But I will definitely try this in future.
+
+
+
+
