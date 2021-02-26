@@ -59,20 +59,27 @@ Some best model metrics screenshots below.
 
 The best model is deployed using Azure Container Instance (ACI). Authentication has been enabled. This has been completed using the Azure Machine Learning studio (the GUI).
 
+Deployed the best model(VotingEnsemble) with by selecting ACI(Azure Contaner Instance) as compute type and Enable Authentication:
+
+![deploy-enable-authentication](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/deploy-enable-authentication.png)
+
 Model is deployed and it is in healthy state:
 
 ![deploy_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/deploy-model.png)
 
-![logs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/logs.png)
+
 
 **Step 4: Enabling Logging**
 
-Application Insights has been enabled for the deployed model using the Python SDK and logs have been retrieved by running the logs.py script.
+We choose the best model for deployment and enable "Authentication" while deploying the model using Azure Container Instance (ACI). The executed code in logs.py enables Application Insights. "Application Insights enabled" is disabled before executing logs.py.
 
-Enabling Application Insights:
+Applications Insights before running logs.py:
+![application-insights-false](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application-insights-false.png)
+
+Applications Insights after running logs.py:
 ![application_insights_enabled](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/application-insights-enabled.png)
 
-Retrieving Application Insights Logs:
+Retrieving Application Insights Logs:This screenshot has logs that are retrieved.
 ![logs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/logs.png)
 
 
@@ -85,8 +92,11 @@ Swagger running on localhost showing the HTTP API methods and responses for the 
 
 ![swagger-bash1](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-bash1.png)
 
+
+Swagger UI now has the name of the deployed model after running the serve.py file:
 ![swagger_ui](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-ui.png)
 
+Screenshot of different HTTP API methods:
 ![Swagger-GET-POST](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Swagger-GET-POST.png)
 
 ![http-methods](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/http-methods.png)
