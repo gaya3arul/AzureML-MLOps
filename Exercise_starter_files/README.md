@@ -100,7 +100,7 @@ The endpoint.py script has been run to interact with the trained model. For this
 
 Running the endpoint.py script against the API producing JSON output from the model:
 ![consuming-model-endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consuming-model-endpoint.png)
-https://github.com/gaya3arul/operationalize-azure-ml-proj-2/tree/main/Exercise_starter_files
+
 
 **Step 7: Creating and Publishing a Pipeline**
 
@@ -112,10 +112,13 @@ AML studio pipeline section showing the pipeline REST endpoint with a status of 
 The bankmarketing dataset with the AutoML module:
 ![publishe-pipeline-overview](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/publishe-pipeline-overview.png)
 
+The bankmarketing dataset with the AutoML module completed:
+![automl-module-python-sdk-completed](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-module-python-sdk-completed.png)
+
 The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
 ![RunWidgets](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/RunWidgets.png)
 
-![automl-module-finished](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-module-finished.png)
+![automl_module_finished](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl_module_finished.png)
 
 A completed pipeline run:
 ![completed-pipeline-runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/completed-pipeline-runs.png)
