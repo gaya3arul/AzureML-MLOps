@@ -175,5 +175,3 @@ The screencast containing the project results has been recorded using the Camtas
 -  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .In future, we can try parallel run in a pipeline when large dataset is used as input. It will be very useful to learn and apply that knowledge. Due to lack of time , I could not try this option. But I will definitely try this in future.
 
 
-
-
