@@ -63,7 +63,7 @@ Model is deployed and it is in healthy state:
 
 ![deploy_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/deploy-model.png)
 
-![logs]
+![logs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/logs.png)
 
 **Step 4: Enabling Logging**
 
@@ -98,6 +98,9 @@ Swagger running on localhost showing the HTTP API methods and responses for the 
 
 The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
 
+Update endpoint.py to having correct scoring uri and key:
+![updating-scoring-uri-key](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-scoring-uri-key.png)
+
 Running the endpoint.py script against the API producing JSON output from the model:
 ![consuming-model-endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consuming-model-endpoint.png)
 
@@ -106,7 +109,7 @@ Running the endpoint.py script against the API producing JSON output from the mo
 
 The aml-exercise-pipelines-with-automated-machine-learning-step.ipynb notebook has been modified and run to create, publish and consume a pipeline.
 
-AML studio pipeline section showing the pipeline REST endpoint with a status of ACTIVE:
+ML studio showing the pipeline endpoint as Active:
 ![pipeline_endpoints](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline-endpoint.png)
 
 The bankmarketing dataset with the AutoML module:
@@ -122,6 +125,9 @@ The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
 
 A completed pipeline run:
 ![completed-pipeline-runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/completed-pipeline-runs.png)
+
+ML studio showing the scheduled run:
+![ml-studio-showing-scheduled-run](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/ml-studio-showing-scheduled-run.png)
 
 
 Benchmarking :(optional step)
