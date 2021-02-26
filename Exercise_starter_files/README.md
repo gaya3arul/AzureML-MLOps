@@ -1,12 +1,4 @@
-# Project 2: Operationalizing Machine Learning with AutoML & AML Pipelines
-
-In this project, Azure Machine Learning is used to build and operationalize a classification model that 
-utilizes the UCI Bank Marketing dataset (https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) to predict if a bank client will subscribe to a term deposit or not. The focus in this project will be on the operationalization of the best model that
-results from an AutoML training run. 
-
-
-
-# Operationalizing Machine Learning
+# Operationalizing Machine Learning with AutoML & AML Pipelines
 
 ## Table of contents
    * [Overview](#Overview)
@@ -17,6 +9,17 @@ results from an AutoML training run.
    * [Comments and future improvements](#Comments-and-future-improvements)
    * [Dataset Citation](#Dataset-Citation)
    * [References](#References)
+
+
+#Overview
+
+In this project, Azure Machine Learning is used to build and operationalize a classification model that 
+utilizes the UCI Bank Marketing dataset (https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) to predict if a bank client will subscribe to a term deposit or not. The focus in this project will be on the operationalization of the best model that
+results from an AutoML training run. 
+
+
+
+
    
 
 ## Architectural Diagram
