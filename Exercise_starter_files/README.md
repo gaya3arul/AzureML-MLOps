@@ -24,7 +24,7 @@ This is the process flow that needs to followed
 ## Key Steps
 **Step 1: Authentication**
 
-I have skipped this step as I am not authorized to create a security principal.When we use our own Azure Account , this step needs to be done to work on the experiment.
+I have skipped this step as I am not authorized to create a security principal in Udacity's lab environment.When we use our own Azure Account , this step needs to be done to work on the experiment.
 
 
 **Step 2: Automated ML Experiment**
@@ -35,25 +35,27 @@ Registered dataset:
 ![registered_dataset](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Registered_dataset.png)
 
 I created an AutoML run with the registered Bank marketing dataset. Classification has been selected and the "Explain best model" option has been checked. The "Exit criterion" has been reduced to 1 hour and the "Concurrency" has been set to 5.
-
+![classification-model-conf](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/classification-model-conf.png)
 Exploration of the data:
 ![dataset-explore](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/dataset-explore.png)
 
-Screenshot added :
-![classification-model-conf](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/classification-model-conf.png)
-
-Completed experiment: AutoML experiment completed successfully and VotingEnsemble is the best model with 91.98 Accuracy. Explanation of the model is also created.
+Completed experiment: AutoML experiment completed successfully and VotingEnsemble is the best model with 91.98% Accuracy. Explanation of the model is also created.
 ![automl_run](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-run.png)
 
-Best model:
+Voting Ensemble is best model created from the Automated ML experiment:
 ![best_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model.png)
 
 Some best model metrics screenshots below.
-
+The best model has an accuracy of around 92% and AUC_Weighted arount 94%.
 ![best-model-metrics](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model-metrics.png)
+
+Here you can see the graphical representation of Precision vs Recall and ROC curve:
+
 ![best-model-precision-ROC](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model-precision-ROC.png)
+
+Graphical representation of Calibration and Lift curve:
 ![best-model-calibration-lift](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model-calibration-lift.png)
-![best-model-cumulative-gains.png](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model-cumulative-gains.png)
+
 
 **Step 3: Model Deployment**
 
@@ -63,10 +65,9 @@ Deployed the best model(VotingEnsemble) with by selecting ACI(Azure Contaner Ins
 
 ![deploy-enable-authentication](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/deploy-enable-authentication.png)
 
-Model is deployed and it is in healthy state:
+Model is deployed and it is in healthy state, Authentication is enabled :
 
 ![deploy_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/deploy-model.png)
-
 
 
 **Step 4: Enabling Logging**
@@ -87,6 +88,7 @@ Retrieving Application Insights Logs:This screenshot has logs that are retrieved
 
 The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 8000 to serve the Swagger JSON file.
 
+
 Swagger running on localhost showing the HTTP API methods and responses for the model:
 ![swagger-bash](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-bash.png)
 
@@ -96,9 +98,7 @@ Swagger running on localhost showing the HTTP API methods and responses for the 
 Swagger UI now has the name of the deployed model after running the serve.py file:
 ![swagger_ui](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/swagger-ui.png)
 
-Screenshot of different HTTP API methods:
-![Swagger-GET-POST](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Swagger-GET-POST.png)
-
+We can post and get data from the webserver using Swagger. The following acreenshots shows various methods used and various responses we get from the server:
 ![http-methods](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/http-methods.png)
 
 ![http-responses](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/http-responses.png)
@@ -108,7 +108,7 @@ Screenshot of different HTTP API methods:
 
 The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
 
-Update endpoint.py to having correct scoring uri and key:
+Updated the endpoint.py to having correct scoring uri and key:
 ![updating-scoring-uri-key](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-scoring-uri-key.png)
 
 Running the endpoint.py script against the API producing JSON output from the model:
@@ -131,9 +131,10 @@ The bankmarketing dataset with the AutoML module completed:
 The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
 ![RunWidgets](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/RunWidgets.png)
 
+AutoML run completed successfully.
 ![automl_module_finished](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl_module_finished.png)
 
-A completed pipeline run:
+Completed Pipeline runs can be seen in the Pipelines section of Azure Machine Learning
 ![completed-pipeline-runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/completed-pipeline-runs.png)
 
 ML studio showing the scheduled run:
@@ -141,11 +142,13 @@ ML studio showing the scheduled run:
 
 
 Benchmarking :(optional step)
-Ran shell script benchmark.sh. It takes around 94.86 ms per request and there are no failed requests.
+
 
 Updating benchmark with correct scoring uri and key:
 
 ![updating-benchmark](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-benchmark.png)
+
+Ran shell script benchmark.sh. It takes around 94.86 ms per request and there are no failed requests.
 
 ![Benchmarking](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/benchmark.png)
 **Step 8: Documentation**
@@ -164,4 +167,4 @@ The screencast containing the project results has been recorded using the Camtas
 ## Improvement Suggestions
 - Dataset:The dataset is imbalanced dataset. There are two classes a) people who subscribe to term deposit and b)people who will not. There is one class with less data. We can balance the dataset by generating synthetic data points for the class which has less data points.
 - Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.We didnt use Deep Learning models. Using DL models can give better results.
--  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .in future, we can try parallel run in a pipeline when large dataset is used as input. It will be very useful to learn and apply that knowledge. 
+-  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .In future, we can try parallel run in a pipeline when large dataset is used as input. It will be very useful to learn and apply that knowledge. 
