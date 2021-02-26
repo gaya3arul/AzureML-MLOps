@@ -16,35 +16,38 @@ In this project, Azure Machine Learning is used to build and operationalize a cl
 utilizes the UCI Bank Marketing dataset (https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) to predict if a bank client will subscribe to a term deposit or not. The focus in this project will be on the operationalization of the best model that
 results from an AutoML training run. 
 
-
-
-
-   
-
 ## Architectural Diagram
 ![Architecture-diagram2](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Architecture-diagram2.png)
+
+This is the process flow that needs to followed
 
 ![architectur_diagram](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/architectur-diagram.png) 
 
 ## Key Steps
 **Step 1: Authentication**
 
-I have skipped this step as I am notauthorized to create a security principal.
+I have skipped this step as I am not authorized to create a security principal.When we use our own Azure Account , this step needs to be done to work on the experiment.
 
 
 **Step 2: Automated ML Experiment**
 
-The dataset has been downloaded from https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv and registered as a dataset in the Azure Machine Learning workspace with all the instructions given in the project section.
+The bank marketing dataset from https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv is already registered as a dataset in the Azure Machine Learning workspace .
 
 Registered dataset:
 ![registered_dataset](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Registered_dataset.png)
+
 I created an AutoML run with the registered Bank marketing dataset. Classification has been selected and the "Explain best model" option has been checked. The "Exit criterion" has been reduced to 1 hour and the "Concurrency" has been set to 5.
 
-Completed experiment:
+Screenshot added :
+![classification-model-conf](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/classification-model-conf.png)
+
+Completed experiment: AutoML experiment completed successfully and VotingEnsemble is the best model with 91.98 Accuracy. Explanation of the model is also created.
 ![automl_run](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-run.png)
 
 Best model:
 ![best_model](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/best-model.png)
+
+
 
 
 **Step 3: Model Deployment**
