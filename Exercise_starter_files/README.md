@@ -6,7 +6,6 @@
    * [Key Steps](#Key-Steps)
    * [Screen Recording](#Screen-Recording)
    * [Improvement Suggestions](#Improvement-Suggestions)
-)
 
 
 ## Overview
