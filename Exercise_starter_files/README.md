@@ -127,6 +127,10 @@ A completed pipeline run:
 Benchmarking :(optional step)
 Ran shell script benchmark.sh. It takes around 94.86 ms per request and there are no failed requests.
 
+Updating benchmark with correct scoring uri and key:
+
+![updating-benchmark](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-benchmark.png)
+
 ![Benchmarking](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/benchmark.png)
 **Step 8: Documentation**
 Architectural diagram , Screenshots, and Screencast have been used for documentation.
@@ -143,5 +147,5 @@ The screencast containing the project results has been recorded using the Camtas
 
 ## Improvement Suggestions
 - Dataset:The dataset is imbalanced dataset. There are two classes a) people who subscribe to term deposit and b)people who will not. There is one class with less data. We can balance the dataset by generating synthetic data points for the class which has less data points.
-- Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.We can further develop the model by assigning more weights to class with lesser data points. Then we need to try to increase difference performance metrics after assigning different weights. The results of the model could be improved.
+- Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.We didnt use Deep Learning models. Using DL models can give better results.
 -  Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner .in future, we can try parallel run in a pipeline when large dataset is used as input. It will be very useful to learn and apply that knowledge. 
