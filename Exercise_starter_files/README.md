@@ -108,9 +108,10 @@ We can post and get data from the webserver using Swagger. The following acreens
 
 Once the best model is deployed, I consume its endpoint using the endpoint.py script provided where I replace the values of scoring_uri and key to match the corresponding values that appear in the Consume tab of the endpoint:
 
-Updated the endpoint.py to having correct scoring uri and key:
+Updated the endpoint.py to having correct scoring uri and key. The result from the model is displayed when endpoint.py script is run.
 ![updating-scoring-uri-key](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/updating-scoring-uri-key.png)
 
+When two data points are passed to the server, the model has predicted that the first datapoint(bank customer) will subscribe to the term deposit and the second person will not.
 Running the endpoint.py script against the API producing JSON output from the model:
 ![consuming-model-endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consuming-model-endpoint.png)
 
