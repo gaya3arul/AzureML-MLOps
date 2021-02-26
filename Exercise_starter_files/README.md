@@ -4,16 +4,20 @@ In this project, Azure Machine Learning is used to build and operationalize a cl
 utilizes the UCI Bank Marketing dataset (https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) to predict if a bank client will subscribe to a term deposit or not. The focus in this project will be on the operationalization of the best model that
 results from an AutoML training run. 
 
-We have tried to cover the following in this project
 
-Authentication
-Automated ML Experiment
-Deploy the best model
-Enable logging
-Swagger Documentation
-Consume model endpoints
-Create and publish a pipeline
-Documentation
+
+# Operationalizing Machine Learning
+
+## Table of contents
+   * [Overview](#Overview)
+   * [Architectural Diagram](#Architectural-Diagram)
+   * [Key Steps](#Key-Steps)
+   * [Screenshots](#Screenshots)
+   * [Screen Recording](#Screen-Recording)
+   * [Comments and future improvements](#Comments-and-future-improvements)
+   * [Dataset Citation](#Dataset-Citation)
+   * [References](#References)
+   
 
 ## Architectural Diagram
 ![architectur_diagram](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/architectur-diagram.png) 
