@@ -22,7 +22,7 @@ results from an AutoML training run.
    
 
 ## Architectural Diagram
-
+![Architecture-diagram2](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/Architecture-diagram2.png)
 
 ![architectur_diagram](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/architectur-diagram.png) 
 
