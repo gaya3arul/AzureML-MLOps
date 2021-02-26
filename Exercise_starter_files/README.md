@@ -100,7 +100,7 @@ The endpoint.py script has been run to interact with the trained model. For this
 
 Running the endpoint.py script against the API producing JSON output from the model:
 ![consuming-model-endpoint](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/consuming-model-endpoint.png)
-
+https://github.com/gaya3arul/operationalize-azure-ml-proj-2/tree/main/Exercise_starter_files
 
 **Step 7: Creating and Publishing a Pipeline**
 
@@ -118,7 +118,7 @@ The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
 ![automl-module-finished](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/automl-module-finished.png)
 
 A completed pipeline run:
-![pipeline-runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/pipeline-runs.png)
+![completed-pipeline-runs](https://github.com/gaya3arul/operationalize-azure-ml-proj-2/blob/main/Exercise_starter_files/screenshots/completed-pipeline-runs.png)
 
 
 Benchmarking :(optional step)
